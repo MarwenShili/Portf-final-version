@@ -1,0 +1,56 @@
+    .skills{
+    font-family: 'Ubuntu',sans-serif;
+}
+    .skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+    .skills .title{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        top: 30px;
+        font-family: 'Ubuntu', sans-serif
+    }
+    .skills .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    
+    .skills .title::after{
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background:#fff;
+        transform: translateX(-50%);
+    }
+    .skills .title::after{
+        content: "what i know";
+    }
+    .skills .skills-content .column{
+        width: calc(50% - 30px);
+    }
+    .skills .skills-content .left .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    
