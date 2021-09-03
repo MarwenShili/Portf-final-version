@@ -4,21 +4,28 @@
      padding: 0 80px;
      margin: auto;
  }
+ a:link 
+{ 
+ text-decoration:none; 
+} 
  .navbar {
      top: 0px;
      z-index: 999;
      position :fixed;
-     padding: 15px 0;
-     width: 100%;
+     padding: 23px 0;
+     width: 99%;
+     height: 47px;
      background-color: none;
-     font-family: 'ubuntu',sans-serif;
- }
+     font-family: 'Ubuntu', sans-serif;
+
+    }
  .navbar.sticky{
      padding: 15px 0;
      background:crimson;
+     margin-top: 0px;
  }
  .navbar.sticky .logo a span {
-     color: #fff;
+     color: #222;
 
  }
  .navbar .max-width{
@@ -45,16 +52,20 @@
  
  .navbar .menu li a{
      color: #fff;
-     font-size: 15px;
-     font-weight: 500;
+     font-size: 15.5px;
+     font-weight: 550;
      margin-left: 25px;
      transition: color 0.3s ease;
  }
  .navbar .menu li a:hover{
  color: crimson;
 }
+.navbar .menu li a:active {
+    color: crimson;
+}
+
 .navbar.sticky .menu li a:hover {
-    color: #fff;
+    color: #000;
 }
 .menu-btn{
     color: #fff;
@@ -70,17 +81,20 @@ padding:0 50px;
         display: block;
         z-index: 999;
     }
+    .menu-btn img{
+        width: 30px;
+    }
     .menu-btn i.active:before{
         content: \f00d;
     }
     .navbar .menu{
         position: fixed;
-        height: 60vh;
-        width: 40%;
+        height: 100vh;
+        width: 100%;
         left: -150%;
         top: -20px;
         background: #111;
-        text-align:left;
+        text-align:center;
         padding-top: 50px;
         transition: all 0.3s ease;
     }
@@ -95,7 +109,9 @@ padding:0 50px;
         margin: 20px 0;
         font-size: 25px;
     }   
- 
+
+
+    
 
 }
 

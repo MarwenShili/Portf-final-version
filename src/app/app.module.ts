@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+//import { AngularFontAwesomeModule} from 'angular-font-awesome';
+
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import {NgxTypedJsModule} from 'ngx-typed-js';
+
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +16,10 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { MyservicesComponent } from './component/myservices/myservices.component';
 import { SkillsComponent } from './component/skills/skills.component';
+import { TeamsComponent } from './component/teams/teams.component';
+import { ContactComponent } from './component/contact/contact.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { ScrollComponent } from './component/scroll/scroll.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +29,18 @@ import { SkillsComponent } from './component/skills/skills.component';
     AboutComponent,
     MyservicesComponent,
     SkillsComponent,
+    TeamsComponent,
+    ContactComponent,
+    FooterComponent,
+    ScrollComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+  //  FontAwesomeModule,
+    CarouselModule ,
+    NgxTypedJsModule
+   // AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

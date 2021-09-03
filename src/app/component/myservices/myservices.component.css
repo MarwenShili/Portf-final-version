@@ -1,17 +1,20 @@
 .services{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background: #111;
     color: #fff;
+    padding: 50px;
+    padding-top: 20px;
 }
+ 
 .services .title{
     font-family: 'Ubuntu', sans-serif;
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     padding-bottom: 20px;
-    top: 30px;
+    margin-top: 80px;
 }
 .services .title::before{
     content: "";
@@ -39,8 +42,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 40px;
+
 }
 .services .title::after{
     background: #111;
@@ -86,7 +89,7 @@ prob de icons
 }
 
 .services .serv-content .card:hover .box{
-transform: scale(1.05);
+    transform: scale(1.05);
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -100,10 +103,16 @@ transform: scale(1.05);
         width: calc(40% - 10px);
         margin-bottom: 20px;
     }
+    .services .serv-content{
+        margin: -10px;
+    }
 }
 @media(max-width:690px){
     .services .serv-content .card {
         width: 100%;
+    }
+    .services .serv-content{
+        margin: -10px;
     }
 }
 
