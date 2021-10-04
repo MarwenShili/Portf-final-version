@@ -1,0 +1,36 @@
+<body>
+    <div class="wrapper">
+      <input type="radio" name="rate" id="star-1">
+      <input type="radio" name="rate" id="star-2">
+      <input type="radio" name="rate" id="star-3">
+      <input type="radio" name="rate" id="star-4">
+      <input type="radio" name="rate" id="star-5">
+      <div class="content">
+       <div class="outer">
+          <div class="emojis">
+            <li class="slideImg"> <img src="assets/emojis/emoji-1.png" alt=""></li>
+            <li><img src="assets/emojis/emoji-2.png" alt=""></li>
+            <li><img src="assets/emojis/emoji-3.png" alt=""></li>
+            <li><img src="assets/emojis/emoji-4.png" alt=""></li>
+            <li><img src="assets/emojis/emoji-5.png" alt=""></li>
+          </div>
+        </div>
+        <div class="stars">
+          <label for="star-1" class="star-1 fas fa-star"><fa-icon [icon]="faStar"></fa-icon></label>
+          <label for="star-2" class="star-2 fas fa-star"><fa-icon [icon]="faStar"></fa-icon></label>
+          <label for="star-3" class="star-3 fas fa-star"><fa-icon [icon]="faStar"></fa-icon></label>
+          <label for="star-4" class="star-4 fas fa-star"><fa-icon [icon]="faStar"></fa-icon></label>
+          <label for="star-5" class="star-5 fas fa-star"><fa-icon [icon]="faStar"></fa-icon></label>
+        </div>
+      </div>
+    <div class="input">
+          <input type="text" placeholder="Let Your Review..." ngModel name="cmt"
+            formControlName="cmt" #box>
+    </div>
+      <div class="footer">
+       <span class="numb"></span>
+        <button class="save">Save</button>
+        <!--<span class="text"></span>-->
+      </div>
+    </div>
+  </body>

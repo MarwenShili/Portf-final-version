@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
 $(document).ready(() =>{
   var typed = new Typed(".typing",{
-    strings: [/*"Front-end developer",*/"Full Stack Web Developer","Designer","Freelancer"],
+    strings: [/*"Front-end developer",*/"Full Stack Web Developer","Designer","Freelancer","Student"],
     typeSpeed: 100,
     backSpeed: 60,
     loop:true,
@@ -25,10 +25,13 @@ $(document).ready(() =>{
 
   })
   });
+ 
   }
  
  
 }
+
+
 /*
 
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import * as $ from 'jquery';
+import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -11,7 +13,7 @@ import * as $ from 'jquery';
   styleUrls: ['./teams.component.css']
 })
 export class TeamsComponent implements OnInit {
-
+  faSortDown=faSortDown
   constructor() { 
   }
 

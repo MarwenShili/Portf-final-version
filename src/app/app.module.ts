@@ -20,6 +20,12 @@ import { TeamsComponent } from './component/teams/teams.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ScrollComponent } from './component/scroll/scroll.component';
+import { RatingComponent } from './component/rating/rating.component';
+import { ContentRatingComponent } from './component/rating/content-rating/content-rating.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ProfileComponent } from './component/profile/profile.component';
+import { EducationsComponent } from './component/educations/educations.component';
+import { ProjectsComponent } from './component/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -33,13 +39,19 @@ import { ScrollComponent } from './component/scroll/scroll.component';
     ContactComponent,
     FooterComponent,
     ScrollComponent,
+    RatingComponent,
+    ContentRatingComponent,
+    ProfileComponent,
+    EducationsComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   //  FontAwesomeModule,
     CarouselModule ,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    FontAwesomeModule
    // AngularFontAwesomeModule
   ],
   providers: [],

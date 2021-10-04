@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import * as $ from 'jquery';
 //import { faFilm } from '@fortawesome/free-solid-svg-icons';
-
+faBars
 
 
 @Component({
@@ -10,7 +12,8 @@ import * as $ from 'jquery';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  //filmIcon = faFilm;
+  
+  faBars = faBars
 
   constructor() {
     

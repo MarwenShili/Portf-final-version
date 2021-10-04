@@ -1,0 +1,108 @@
+section{
+    padding: 100px 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+    }
+    a:link 
+    { 
+     text-decoration:none; 
+    } 
+    .education{
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .education .title{
+        position: relative;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        margin-top: -20px;
+    }
+    .education .title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    .education .title::after{
+        content: "What i do";
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        font-size: 20px;
+        color: crimson;
+        padding: 5px;
+        background:#fff;
+        transform: translateX(-50%);
+    }
+
+  .education .max-width{
+      margin-left: 10px;
+  }
+    .education .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: -60px;
+}
+    
+    .education .box-container .box{
+        position: relative;
+        flex:1 1 33rem;
+        border-left: .2rem solid crimson;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;    
+        font-size: 16px;
+    }
+    .education .box-container .box .content:hover{
+        transform: scale(1.05);
+    }
+
+    
+    .education .box-container .box::before{
+        content: '';
+        position: absolute;
+        top:0; left:-1rem;
+        height:2rem;
+        width:2rem;
+        border-radius: 50%;
+        background:crimson;
+    }
+    
+    .education .box-container .box .content{
+        background:#fff;
+        padding:1.5rem;
+        box-shadow: 0 .9rem 1rem rgba(0,0,0,.1);
+        border-radius: .5rem;
+        margin: -5px;
+    }
+    
+    .education .box-container .box .content span{
+        color: white;
+        font-size: 1.7rem;
+        background:crimson;
+        border-radius: 50rem;
+        padding:.4rem 1rem;
+    }
+    
+    .education .box-container .box .content h3{
+        padding:.5rem 0;
+        color:#111;
+        justify-content: center;
+        font-weight: 600;
+    }
+    
+    .education .box-container .box .content p{
+        color:#333;
+    }
+    

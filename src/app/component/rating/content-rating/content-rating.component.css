@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    font-family: "Ubuntu",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .wrapper{
+    background:none;
+    width: 100%;
+    border-radius: 10px;
+    background: white;
+  }
+  .wrapper .content{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .outer{
+    height: 135px;
+    width: 135px;
+    overflow: hidden;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .outer .emojis{
+    height: 500%;
+    display: flex;
+    flex-direction: column;
+  }
+  .outer .emojis li{
+    height: 20%;
+    width: 100%;
+    list-style: none;
+    transition: all 0.3s ease;
+  }
+  .outer li img{
+    height: 100%;
+    width: 100%;
+  }
+  #star-2:checked ~ .content .emojis .slideImg{
+    margin-top: -135px;
+  }
+  #star-3:checked ~ .content .emojis .slideImg{
+    margin-top: -270px;
+  }
+  #star-4:checked ~ .content .emojis .slideImg{
+    margin-top: -405px;
+  }
+  #star-5:checked ~ .content .emojis .slideImg{
+    margin-top: -540px;
+  }
+  .wrapper .stars{
+    margin-top: 0px;
+    margin-left: -25px;
+    margin-top: 20px;
+  }
+  .stars label{
+    font-size: 30px;
+    margin: 0 3px;
+    color: #ccc;
+  }
+  #star-1:hover ~ .content .stars .star-1,
+  #star-1:checked ~ .content .stars .star-1,
+  #star-2:hover ~ .content .stars .star-1,
+  #star-2:hover ~ .content .stars .star-2,
+  #star-2:checked ~ .content .stars .star-1,
+  #star-2:checked ~ .content .stars .star-2,
+  #star-3:hover ~ .content .stars .star-1,
+  #star-3:hover ~ .content .stars .star-2,
+  #star-3:hover ~ .content .stars .star-3,
+  #star-3:checked ~ .content .stars .star-1,
+  #star-3:checked ~ .content .stars .star-2,
+  #star-3:checked ~ .content .stars .star-3,
+  #star-4:hover ~ .content .stars .star-1,
+  #star-4:hover ~ .content .stars .star-2,
+  #star-4:hover ~ .content .stars .star-3,
+  #star-4:hover ~ .content .stars .star-4,
+  #star-4:checked ~ .content .stars .star-1,
+  #star-4:checked ~ .content .stars .star-2,
+  #star-4:checked ~ .content .stars .star-3,
+  #star-4:checked ~ .content .stars .star-4,
+  #star-5:hover ~ .content .stars .star-1,
+  #star-5:hover ~ .content .stars .star-2,
+  #star-5:hover ~ .content .stars .star-3,
+  #star-5:hover ~ .content .stars .star-4,
+  #star-5:hover ~ .content .stars .star-5,
+  #star-5:checked ~ .content .stars .star-1,
+  #star-5:checked ~ .content .stars .star-2,
+  #star-5:checked ~ .content .stars .star-3,
+  #star-5:checked ~ .content .stars .star-4,
+  #star-5:checked ~ .content .stars .star-5{
+    color: crimson;
+  }
+  .wrapper .footer{
+    border-top: 1px solid #ccc;
+    background: #f2f2f2;
+    width: 100%;
+    height: 55px;
+    padding: 0 20px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Ubuntu",sans-serif;
+  }
+  .footer span{
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .footer .text::before{
+    content: "Rate your experience";
+    color: black;
+}
+  .footer .numb::before{
+    content: "0 out of 5";
+    color: black;
+  }
+  #star-1:checked ~ .footer .text::before{
+    content: "I just hate it";
+  }
+  #star-1:checked ~ .footer .numb::before{
+    content: "1 out of 5";
+  }
+  #star-2:checked ~ .footer .text::before{
+    content: "I don't like it";
+  }
+  #star-2:checked ~ .footer .numb::before{
+    content: "2 out of 5";
+  }
+  #star-3:checked ~ .footer .text::before{
+    content: "This is awesome";
+  }
+  #star-3:checked ~ .footer .numb::before{
+    content: "3 out of 5";
+  }
+  #star-4:checked ~ .footer .text::before{
+    content: "I just like it";
+  }
+  #star-4:checked ~ .footer .numb::before{
+    content: "4 out of 5";
+  }
+  #star-5:checked ~ .footer .text::before{
+    content: "I just love it";
+  }
+  #star-5:checked ~ .footer .numb::before{
+    content: "5 out of 5";
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  .input input{
+    width: 90%;
+    height: 40px;
+    border-top: white;
+    border-left: none;
+    border-right: none;
+    margin: 10px;
+}
+.save{
+  font-family: "Ubuntu",sans-serif;
+  width: 100px !important;
+  height: 35px !important;
+  position: fixed;
+  right: 200px;
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.save:hover{
+  background: none;
+  color: crimson;
+}
+

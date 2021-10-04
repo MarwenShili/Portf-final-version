@@ -15,11 +15,11 @@ a:link
     color:#fff;
     min-height: 500px;
     background-size:cover;
-    font-family: 'ubuntu',sans-serif;
+    font-family: 'Ubuntu',sans-serif;
 }
 .home img{
     position: absolute;
-    width: 99%;
+    width: 98.75%;
     height: 100vh;
 }
 .home .max-width{
@@ -36,6 +36,7 @@ a:link
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    font-family: 'Nunito',sans-serif;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -64,6 +65,9 @@ font-weight: 500;
 @media(max-width:1104px){
     .home .max-width{
         margin-left: 0px;}
+        .home .home-content{
+            margin-top: -40px;
+        }
 }
 
 

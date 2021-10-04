@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
 import Typed from 'typed.js';
+
 
 @Component({
   selector: 'app-about',
@@ -8,7 +10,7 @@ import Typed from 'typed.js';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-
+  faDownload=faDownload
   constructor() { }
 
   ngOnInit(): void {

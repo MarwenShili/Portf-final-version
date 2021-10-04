@@ -1,0 +1,85 @@
+/*--------------------------*/
+.center , .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+
+#click{
+    display: none;
+}
+.content{
+    text-align: center;
+    visibility: hidden;
+    width: 500px;
+    height: 230px;
+    background: white;
+    transition: .1s ease-in;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+}
+#click:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+}
+.header h2{
+    text-align: center;
+    color: black;
+}
+.center img{
+    margin: 10px;
+    float: right;
+}
+.click-me{
+    text-align: center;
+    color: #fff;
+    display: block;
+    width: 160px;
+    height: 40px;
+}
+.click-me:hover{
+    color: crimson;
+}
+
+.center label{
+    border-radius: 1em;
+}
+a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    padding-right: 55px;
+    padding-left: 0px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    width: 100px;
+    height: 23px;
+    text-align: center;
+}
+a:hover{
+    background: none;
+}
+.rate{
+   margin-top: 195px;
+   margin-right: 500px;
+}
+
+.save{
+    width: 100px !important;
+    height: 35px !important;
+    background-image:radial-gradient(circle at top right, #6b1376, #AD0C79 ,rgb(89, 0, 255));
+    border-radius: 1em;
+    color: white;
+    border: none;
+}
+.close{
+    float: left;
+    margin: 10px;
+    margin-bottom: -30px;
+}
